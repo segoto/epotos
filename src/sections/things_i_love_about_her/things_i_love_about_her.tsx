@@ -51,7 +51,7 @@ function ThingsILoveAboutHer() {
               otros ojos.
             </li>
             <li>
-              La froma en la que siempre haces que cualquier momento juntos sea
+              La forma en la que siempre haces que cualquier momento juntos sea
               mágico
             </li>
           </ul>
