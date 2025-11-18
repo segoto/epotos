@@ -1,7 +1,13 @@
-import Introduction from "./sections/introduction";
+import Introduction from "./sections/introduction/introduction";
+import TimeTogether from "./sections/time_together/time_together";
 
 function App() {
-  return <Introduction />;
+  return (
+    <>
+      <Introduction />
+      <TimeTogether />
+    </>
+  );
 }
 
 export default App;

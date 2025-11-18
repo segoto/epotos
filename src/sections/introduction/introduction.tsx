@@ -16,7 +16,6 @@ function Introduction() {
             construyendo recuerdos hermosos juntos. Te amo con todo mi corazón.
           </p>
         </div>
-        <div className="grid-row"></div>
       </div>
     </section>
   );
