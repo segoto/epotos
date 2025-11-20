@@ -1,5 +1,7 @@
 import { useState } from "react";
-
+export type PhotoCarouselProps = {
+  images: { path: string; alt: string }[];
+};
 function PhotoCarousel(props: { images: { path: string; alt: string }[] }) {
   const [current, setCurrent] = useState(0);
 
@@ -14,34 +16,38 @@ function PhotoCarousel(props: { images: { path: string; alt: string }[] }) {
     <div className="relative w-full max-w-md max-h-fit">
       <div className="flex items-center justify-center w-full max-w-md mx-auto">
         <img
-          src={props.images[current].path}
-          alt={`${props.images[current].alt} image`}
+          src={props.images[current]?.path}
+          alt={`${props.images[current]?.alt} image`}
           className="w-full lg:rounded-2xl object-cover"
         />
       </div>
 
       {/* Left / right arrows */}
-      <button
-        onClick={prev}
-        className="
+      {props.images.length > 1 && (
+        <>
+          <button
+            onClick={prev}
+            className="
           absolute left-3 top-1/2 -translate-y-1/2
           rounded-full bg-black/50 text-white
           p-2 text-sm
         "
-      >
-        ‹
-      </button>
+          >
+            ‹
+          </button>
 
-      <button
-        onClick={next}
-        className="
+          <button
+            onClick={next}
+            className="
           absolute right-3 top-1/2 -translate-y-1/2
           rounded-full bg-black/50 text-white
           p-2 text-sm
         "
-      >
-        ›
-      </button>
+          >
+            ›
+          </button>
+        </>
+      )}
 
       {/* Dots */}
       {/* <div className="mt-3 flex justify-center gap-2">
