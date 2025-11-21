@@ -249,7 +249,7 @@ const events: TimelineEventType[] = [
     date: "Septiembre de 2025",
     title: "Disney, Universal, Epic!",
     description:
-      "Después de nuestra boda, nos vamos de viaje de bodas a un lugar paradisíaco donde podamos relajarnos y disfrutar de nuestra nueva vida juntos como esposos.",
+      "Disfrutamos de un viaje espectacular, en el que conocí disney y epic junto al amor de mi vida. Disfrutamos mucho y tuvimos un merecido descanso después de un año largo sin haber vuelto a tener un viaje de ese estilo. Te amo y espero que podamos seguir disfrutanto hasta el ultimo segundo juntos.",
     images: [
       {
         path: "timeline/560555736_18541666585019285_8117239761615542323_n.jpg",
